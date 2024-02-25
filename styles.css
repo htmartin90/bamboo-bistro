@@ -1,0 +1,362 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+:root{
+    --dk-blue: #052326;
+    --lt-orange: #F29544;
+    --dk-orange: #A6431F;
+    --brown: #733119;
+    --lt-gray: #F2F2F2;
+    --white: #FFFFFF;
+    --font-head: "Josefin Slab", "Times New Roman", serif;
+    --font-body: "Josein Sans", "Arial" sans-serif;
+}
+body{
+    box-sizing: border-box;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    margin: 0;
+    font-family: var(--font-body);
+    background-color: var(--dk-blue);
+    background-image: url(images/black-linen-2.png);
+    color: var(--lt-gray);
+}
+a{
+    display: flex;
+    padding: 1rem;
+}
+p{
+    width: 100%;
+    max-width: 60ch;
+    margin: 0 auto;
+}
+h3{
+    display: block;
+    color: var(--lt-orange);
+    font-family: var(--font-head);
+    font-size: 2.3rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    padding: 2rem 0.5rem 0;
+}
+header{
+    padding: 1rem;
+    width: 968px;
+    margin: 0 auto;
+    display: block;
+}
+header h1{
+    margin: 0 auto;
+    padding: 5px 0;
+    font-family: var(--font-head);
+    font-size: 3.5rem;
+    text-align: center;
+}
+header h1 a{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: var(--lt-orange);
+}
+nav ul{
+    list-style-type: none;
+    padding-left: 0;
+    display: flex;
+    gap: 1 rem;
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: var(--lt-gray);
+    font-weight: bold; 
+}
+nav a:hover{
+    border-top: 2px solid var(--lt-orange);
+    border-bottom: 2px solid var(--lt-orange);
+    cursor: pointer;
+}
+main{
+    width: 1280px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0 auto 8px auto;
+    background-image: url(images/black-linen-2.png);
+    background-color: var(--lt-orange);
+}
+main section{
+    display: block;
+    padding: 2rem 1rem;
+}
+.cater{
+    display: block;
+}
+.cater img{
+    float: right;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem 1rem;
+}
+.cater h2{
+    display: block;
+    color: var(--lt-orange);
+    font-family: var(--font-head);
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 8rem 1rem 0;
+    margin: 1rem 0.5rem;
+    text-align: center;
+}
+.cater a{
+    text-decoration: none;
+    color: var(--lt-gray);
+    font-family: var(--font-body);
+    display: block;
+    text-align: center;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    padding: 0;
+}
+.cater a:hover{
+    color: var(--lt-orange);
+    cursor: pointer;
+}
+.cater h3{
+    clear: both;
+    color: var(--lt-orange);
+    display: block;
+    font-family: var(--font-head);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5rem 0.5rem 0;
+}
+.cater p{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 55ch;
+    text-align: left;
+
+}
+.cuisine img, .chef img{
+    display: block;
+    margin: 0 auto;
+    padding: 25px 0;
+    width: 100%;
+}
+.contact{
+    display: block;
+}
+.contact h2{
+    color: var(--lt-orange);
+    text-align: center;
+    display: block;
+    font-family: var(--font-head);
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 1rem 0.5rem; 
+}
+#form{
+    display: flex;
+}
+.required{
+	color: var(--lt-orange);
+	font-size: 1.3rem;
+	font-weight: bold;
+}
+form{
+	width: 300px;
+	margin: 16px auto;
+	padding: 16px; 
+    color: var(--lt-gray);
+	border-radius: 4px;
+    float: left;
+}
+input, label, select, textarea{
+	display: block;
+	width: 100%;
+}
+label{
+	margin: 0 0 4px 16px;
+	font-weight: bold;
+}
+input, select, textarea{
+	padding: 10px;
+	font-size: 1rem;
+	margin-bottom: 10px;
+	border-radius: 4px;
+	border: 1px inset var(--lt-orange);
+	background-color: var(--white);
+}
+select{
+	appearance: none;
+	height: 46px;
+	font-style: normal;
+	font-weight: normal;
+	color: var(--dk-blue);
+}
+#arrow::after{
+	display: block;
+	content: "\25bc";
+	width: 3px;
+	height: 3px;
+	color: var(--dk-blue);
+	position: relative;
+	top: -2.75rem;
+	left: 17rem;
+}
+fieldset{
+	margin-bottom: 24px;
+	border-radius: 4px;
+    border: 1px solid;
+	border-color: var(--dk-blue);
+	display: grid;
+	grid-template-columns: 1fr;
+	row-gap: 1px;
+}
+legend{
+	font-weight: bold;	
+}
+input[type="radio"] + label{
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+}
+input[type="radio"] + label {
+    cursor: pointer;
+ display: flex;
+ align-items: center;
+}
+
+input[type="radio"] {
+    appearance: none;
+    margin: 0;
+ padding: 0;
+ border: none;
+ font-size: 0;
+ border-radius: 0;
+}
+
+input[type="radio"] + label::before {
+    content: "\00a0";   /* Non-breaking space */
+ font-size: 2.25em;
+ line-height: 0.59;
+    border-radius: 50%;
+    display: inline-block;  
+    height: 20px;
+    width: 22px;
+    text-align: center;
+    margin-right: 16px;
+    border: 2px solid var(--lt-orange);   /* Push focus shadow away */
+    background-color: var(--lt-orange);
+ padding-bottom: 1.8px;
+}
+
+input[type="radio"]:checked + label::before {
+    content: "\2022";
+    color: var(--lt-orange);
+    background: var(--brown);
+}
+
+input[type="radio"]:focus{
+ outline: none;
+}
+
+input[type="radio"]:focus + label::before {
+    box-shadow: 0 0 0 2px var(--dk-blue);
+}
+#my-submit{
+	background-color: var(--dk-blue);
+	border: none;
+	color: var(--lt-gray);
+	font-size: 1.1rem;
+	font-weight: bold;
+	box-shadow: -6px 6px 10px var(--dk-blue);
+    margin: 20px 10px;
+}
+input:invalid, select:invalid, textarea:invalid{
+	border: 4px solid var(--dk-orange);
+	box-shadow: -6px 6px 10px var(--dk-blue);
+}
+input:focus, select:focus, textarea:focus{
+	outline: 3px solid var(--dk-blue);
+}
+#my-submit:focus{
+	outline: 3px solid var(--dk-orange);
+}
+#my-submit:hover{
+	box-shadow: -3px 3px 5px var(--dk-blue);
+}
+#form img{
+    margin: 15% auto auto;
+}
+footer{
+    padding: 1rem;
+    width: 968px;
+    margin: 0 auto;
+    background-color: var(--dk-blue);
+    background-image: url(images/black-linen-2.png);
+    color: var(--lt-gray);
+    text-align: center;
+    padding-top: 2rem;
+}
+footer h2{
+    margin: 0;
+    font-size: 1.35rem;
+}
+footer p{
+    font-size: 1rem;
+}
